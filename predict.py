@@ -118,8 +118,8 @@ def predict(pred_config):
             inputs = {"input_ids": batch[0],
                       "attention_mask": batch[1],
                       "labels": None}
-            if args.model_type != "distilkobert":
-                inputs["token_type_ids"] = batch[2]
+#             if args.model_type != "distilkobert":
+            inputs["token_type_ids"] = batch[2]
             outputs = model(**inputs)
             logits = outputs[0]
 
