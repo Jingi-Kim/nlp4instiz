@@ -9,7 +9,7 @@ from transformers import AutoTokenizer, AutoModel, AutoConfig
 
 
 def get_label(args):
-    return [0, 1]
+    return [0, 1, 2]
 
 
 def load_tokenizer(args):
